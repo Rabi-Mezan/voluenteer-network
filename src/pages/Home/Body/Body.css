@@ -8,3 +8,10 @@
     font-size: 14px;
     padding: 5px 20px;
 }
+
+.events{
+    margin-top: 80px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4,1fr);
+}
