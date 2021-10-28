@@ -24,19 +24,19 @@ const AddEvents = () => {
 
     return (
         <div className='add-event mt-5'>
-            <div className='d-flex flex-column justify-content-center  align-items-start ms-5'>
+            <div className='d-flex flex-column justify-content-center  align-items-start ms-3'>
                 <img className='w-50' src={logo} alt="" />
                 <div className='d-flex align-items-center justify-content-center mt-4'>
                     <p>  <i class="fas fa-user-friends me-2"></i>Volunteer register list</p>
                 </div>
-                <p>+ Add Event</p>
+                <p className='text-info'>+ Add Event</p>
 
             </div>
             <div>
 
                 <div className='add-event-form '>
-                    <h3 className='text-start'>Add Events</h3>
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <h3 className='text-start ms-4 fw-bold'>Add Events</h3>
+                    <form className='main-form pb-3' onSubmit={handleSubmit(onSubmit)}>
 
                         <div className='d-flex inputs pt-5'>
                             <div className='d-flex flex-column'>
@@ -48,8 +48,9 @@ const AddEvents = () => {
                                 <input className='input-field' placeholder='image url' {...register("img")} />
                             </div>
                         </div>
-                        <input className='btn-submit' type="submit" />
+
                     </form>
+                    <input className='btn-submit' type="submit" />
                 </div>
             </div>
         </div>

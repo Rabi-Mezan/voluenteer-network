@@ -1,24 +1,27 @@
 
-form{  
-    background-color: rgba(128, 128, 128, 0.089);
-}
-
-
 .add-event{
-    display: grid;
-   grid-template-columns: 1fr 3fr;
+    display: flex;
+    align-items: baseline;
+   
+}
+.add-event-form{
+    background-color: rgba(128, 128, 128, 0.089);
+    height: 100vh;
 }
 
-
+.main-form{
+   background-color: white;
+   margin: 20px 30px ;
+   border-radius: 10px;
+}
 form .inputs{
     margin: 20px 50px;
-    padding: 20px 40px;
-    background-color: white;
+    padding: 5px;
 }
 
 
 .inputs .input-field{
-    width: 350px;
+    width: 300px;
     margin: 10px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -26,7 +29,7 @@ form .inputs{
 }
 
 .inputs .text-area{
-    width: 350px;
+    width: 300px;
     margin: 10px;
     height: 80px;
     border: 1px solid gray;
@@ -41,4 +44,5 @@ form .inputs{
     border: none;
     text-align: center;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
